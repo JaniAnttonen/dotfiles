@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Controls the font family.
+    "editor.fontFamily": "hack, Menlo, Monaco, 'Courier New', monospace",
+    // Controls the font size.
+    "editor.fontSize": 15,
+    // Controls the cursor style, accepted values are 'block' and 'line'
+    "editor.cursorStyle": "block",
+    // Control the cursor animation style, possible values are 'blink', 'smooth', 'phase', 'expand' and 'solid'
+    "editor.cursorBlinking": "solid",
+    // Always render whitespaceings
+    "editor.renderWhitespace": true,
+    // Controls whether the editor should render control characters
+    "editor.renderControlCharacters": true,
+    // Render indent guides
+    "editor.renderIndentGuides": true,
+    // Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
+    "editor.wordWrap": true
+}
