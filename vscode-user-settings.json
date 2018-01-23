@@ -1,19 +1,27 @@
-// Place your settings in this file to overwrite the default settings
 {
-    // Controls the font family.
-    "editor.fontFamily": "hack, Menlo, Monaco, 'Courier New', monospace",
-    // Controls the font size.
-    "editor.fontSize": 15,
-    // Controls the cursor style, accepted values are 'block' and 'line'
-    "editor.cursorStyle": "block",
-    // Control the cursor animation style, possible values are 'blink', 'smooth', 'phase', 'expand' and 'solid'
-    "editor.cursorBlinking": "solid",
-    // Always render whitespaceings
-    "editor.renderWhitespace": true,
-    // Controls whether the editor should render control characters
-    "editor.renderControlCharacters": true,
-    // Render indent guides
-    "editor.renderIndentGuides": true,
-    // Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
-    "editor.wordWrap": true
+  "editor.formatOnSave": true,
+  "editor.fontFamily":
+    "Source Code Pro, hack, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.tabSize": 2,
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.renderIndentGuides": true,
+  "editor.wordWrap": "on",
+  "window.menuBarVisibility": "toggle",
+  "typescript.check.npmIsInstalled": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "auto-close-tag.SublimeText3Mode": true,
+  "files.insertFinalNewline": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "prettier.eslintIntegration": true,
+  "material-icon-theme.showUpdateMessage": false,
+  "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+  "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+  "python.disablePromptForFeatures": ["pylint"],
+  "git.autofetch": true,
+  "window.restoreWindows": "none"
 }
