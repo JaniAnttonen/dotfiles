@@ -1,28 +1,15 @@
-# Useful Docker aliases
-alias dc='docker-compose'
-alias dcr='docker-compose run --rm --service-ports'
-alias dm='docker-machine'
-alias startdocker='docker-machine start default; and eval (docker-machine env default)'
+# s3git
+set -gx PATH /home/jani/dev/s3git $PATH
 
-# Docker eval
-eval (docker-machine env default)
+# Cargo (Rust lang)
+set -gx PATH /home/jani/.cargo/bin $PATH
 
-# Powerline
-export LANG="en_US.UTF-8"
-export LC_COLLATE="en_US.UTF-8"
-export LC_CTYPE="en_US.UTF-8"
-export LC_MESSAGES="en_US.UTF-8"
-export LC_MONETARY="en_US.UTF-8"
-export LC_NUMERIC="en_US.UTF-8"
-export LC_TIME="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8"
-
-# Aliases for coreutils
-alias shuf='gshuf'
+# Golang
+set --universal -x GOPATH $HOME/dev/go
 
 # Conda Functions
 function condalist -d 'List conda environments.'
-  for dir in (ls $HOME/anaconda/envs)
+  for dir in (ls $HOME/anaconda3/envs)
     echo $dir
   end
 end
@@ -35,7 +22,7 @@ function condactivate -d 'Activate a conda environment' -a cenv
 
   # condabin will be the path to the bin directory
   # in the specified conda environment
-  set condabin $HOME/anaconda/envs/$cenv/bin
+  set condabin /home/jani/anaconda3/envs
 
   # check whether the condabin directory actually exists and
   # exit the function with an error status if it does not
@@ -105,3 +92,6 @@ end
 # complete conda environment names when activating
 complete -c condactivate -xA -a "(condalist)"
 complete -c ca -xA -a "(condalist)"
+
+# The Fuck
+thefuck --alias | source
